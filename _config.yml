@@ -97,11 +97,11 @@ exclude_generator:
 #  branch: master
 
 deploy:
-  type: rsync
-  host: 120.24.181.238
-  user: root
-  root: /usr/local/nginx/litten.me/
-  port: 22
+  type: git
+  repo: https://github.com/TearsOkigondo/tearsokigondo.github.io
+ # example, https://github.com/hexojs/hexojs.github.io
+  branch: gh-pages
+
 
 #sitemap:
 #    path: sitemap.xml
@@ -131,4 +131,5 @@ jsonContent:
     excerpt: false
     categories: false
     tags: true
+    
 
