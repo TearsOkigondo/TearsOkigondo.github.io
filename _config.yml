@@ -96,12 +96,16 @@ exclude_generator:
 #  repository: git@github.com:litten/litten.github.com.git
 #  branch: master
 
+
 deploy:
   type: git
-  repo: https://github.com/TearsOkigondo/tearsokigondo.github.io
- # example, https://github.com/hexojs/hexojs.github.io
-  branch: gh-pages
-
+  repo:
+    github:
+      url: https://github.com/TearsOkigondo/tearsokigondo.github.io.git
+      branch: gh-pages
+      token: $GH_TOKEN
+  name: TearsOkigondo
+  email: Alakir.aya@gmail.com
 
 #sitemap:
 #    path: sitemap.xml
